@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>FedStyleValidator — Check Word Documents Against Federal Writing Standards</title>
-<meta name="description" content="Federal Style Validator (FSV) is an open-source tool that checks Word (.docx) documents against federal writing, formatting, accessibility, and terminology rules. Rule packs for federal, FAA, DOT OGC, plain language, and accessibility. CLI plus JSON, SARIF, JUnit, HTML, DOCX, and PDF reports.">
+<meta name="description" content="Federal Style Validator (FSV) is an open-source tool that checks Word (.docx) documents against federal writing, formatting, accessibility, and terminology rules. Rule packs for federal, FAA, DOT OGC, plain language, and accessibility. Try the live browser demo, or run the CLI for JSON, SARIF, and JUnit reports.">
 <link rel="canonical" href="https://eputnam77.github.io/projects/fedstylevalidator/">
 <meta name="author" content="Eric Putnam">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Eric Putnam">
 <meta property="og:title" content="FedStyleValidator — Check Word Documents Against Federal Writing Standards">
-<meta property="og:description" content="Open-source checker for federal writing, formatting, accessibility, and terminology rules in Word documents. CLI plus JSON, SARIF, and JUnit reports for CI.">
+<meta property="og:description" content="Open-source checker for federal writing, formatting, accessibility, and terminology rules in Word documents. Try the live demo in your browser.">
 <meta property="og:url" content="https://eputnam77.github.io/projects/fedstylevalidator/">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -41,6 +41,8 @@
       "programmingLanguage": "Python",
       "codeRepository": "https://github.com/eputnam77/FedStyleValidator",
       "downloadUrl": "https://pypi.org/project/fedstylevalidator/",
+      "installUrl": "https://pypi.org/project/fedstylevalidator/",
+      "sameAs": "https://huggingface.co/spaces/Hoctar77/fedstylevalidator",
       "softwareRequirements": "Python 3.11 through 3.13",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -71,6 +73,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "FedStyleValidator checks Word (.docx) documents against federal writing, formatting, accessibility, and terminology rules. It ships built-in rule packs for federal, FAA, DOT OGC, plain language, accessibility, and external prose checks, and reports issues by category and severity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I try FedStyleValidator without installing it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A live demo runs in the browser as a Hugging Face Space at https://huggingface.co/spaces/Hoctar77/fedstylevalidator, so you can check a document without installing Python or the package."
           }
         },
         {
@@ -121,7 +131,7 @@
     <!-- ============ Hero ============ -->
     <section class="band band--open" aria-labelledby="title">
       <div class="spread">
-        <p class="margin-note rise" data-d="1">Project 02<br>Python<br>PyPI</p>
+        <p class="margin-note rise" data-d="1">Project 02<br>Python<br>Live demo</p>
         <div>
           <h1 class="display rise" id="title" data-d="1">FedStyle<wbr>Validator</h1>
           <div class="changebar rise" data-d="2">
@@ -133,12 +143,9 @@
           </div>
 
           <ul class="actions rise" data-d="3">
-            <li><a class="btn btn--mark" href="https://github.com/eputnam77/FedStyleValidator" rel="noopener">View on GitHub <span class="btn__arrow">&rarr;</span></a></li>
-            <li><a class="btn" href="https://pypi.org/project/fedstylevalidator/" rel="noopener">PyPI package</a></li>
-            <!-- TODO: restore once the Hugging Face Space is set to public visibility.
-                 It currently returns HTTP 401 to anonymous visitors.
             <li><a class="btn btn--mark" href="https://huggingface.co/spaces/Hoctar77/fedstylevalidator" rel="noopener">Try the live demo <span class="btn__arrow">&rarr;</span></a></li>
-            -->
+            <li><a class="btn" href="https://github.com/eputnam77/FedStyleValidator" rel="noopener">View on GitHub</a></li>
+            <li><a class="btn" href="https://pypi.org/project/fedstylevalidator/" rel="noopener">PyPI package</a></li>
           </ul>
 
           <p class="note rise" data-d="4">
@@ -253,9 +260,7 @@ pip install -e .</code></pre>
               <tbody>
                 <tr><th scope="row">Repository</th><td><a href="https://github.com/eputnam77/FedStyleValidator" rel="noopener">github.com/eputnam77/FedStyleValidator</a></td></tr>
                 <tr><th scope="row">Package</th><td><a href="https://pypi.org/project/fedstylevalidator/" rel="noopener">pypi.org/project/fedstylevalidator</a></td></tr>
-<!-- TODO: restore once the Hugging Face Space is public (currently 401 for anonymous visitors).
                 <tr><th scope="row">Live demo</th><td><a href="https://huggingface.co/spaces/Hoctar77/fedstylevalidator" rel="noopener">Hugging Face Space</a></td></tr>
--->
                 <tr><th scope="row">Requirements</th><td>Python 3.11 through 3.13; Node 18+ only for the React UI from source</td></tr>
                 <tr><th scope="row">Input format</th><td>Word <code>.docx</code></td></tr>
                 <tr><th scope="row">Output formats</th><td>JSON, text, HTML, SARIF, JUnit, DOCX, PDF</td></tr>
