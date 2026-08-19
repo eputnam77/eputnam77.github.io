@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DocReview360 — Self-Hosted Document Review and Approval Workflow Software</title>
+<meta name="description" content="DocReview360 is open-source, self-hosted document review, approval, and audit workflow software for technical and regulated documents. Inline review comments, configurable approval phases, digital signatures, SHA-256 revision hashes, and a hash-chained audit trail. MIT licensed.">
+<link rel="canonical" href="https://eputnam77.github.io/projects/docreview360/">
+<meta name="author" content="Eric Putnam">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Eric Putnam">
+<meta property="og:title" content="DocReview360 — Self-Hosted Document Review and Approval Workflow Software">
+<meta property="og:description" content="Open-source document review, approval, and audit workflow software for technical and regulated documents. Self-hosted, MIT licensed.">
+<meta property="og:url" content="https://eputnam77.github.io/projects/docreview360/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FAF8F3'/%3E%3Cpath d='M7 9h18M7 15h18M7 21h11' stroke='%2317130F' stroke-width='2'/%3E%3Cpath d='M20 24l9-9' stroke='%23BE3A21' stroke-width='2.5'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://eputnam77.github.io/projects/docreview360/#software",
+      "name": "DocReview360",
+      "url": "https://eputnam77.github.io/projects/docreview360/",
+      "description": "Open-source, self-hosted document review, approval, and audit workflow software for technical and regulated documents. Routes documents through drafting, collaborative review, approval, and publication with document version control, inline review comments, controlled approval workflows, and a verifiable hash-chained audit trail.",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Document review and approval workflow software",
+      "operatingSystem": "Linux, macOS, Windows",
+      "programmingLanguage": ["Python", "TypeScript"],
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/eputnam77/DocReview360",
+      "downloadUrl": "https://pypi.org/project/docreview360/",
+      "softwareRequirements": "Python",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://eputnam77.github.io/#person" },
+      "featureList": [
+        "Inline, text-anchored review comments",
+        "Parallel or sequential reviewer assignment",
+        "Configurable approval phases with required approvals and escalations",
+        "Digital signatures on approvals",
+        "Autosaved revisions with SHA-256 revision hashes",
+        "Hash-chained audit log with CLI verification",
+        "Federal writing-standards validation of drafts",
+        "Optional ONNX critic models for document quality",
+        "SQLite, PostgreSQL, MySQL, SQL Server, and Oracle support",
+        "LDAP/Active Directory, SAML 2.0, and WebAuthn sign-in"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Projects", "item": "https://eputnam77.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "DocReview360", "item": "https://eputnam77.github.io/projects/docreview360/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is DocReview360?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DocReview360 is open-source, self-hosted software that routes a document through drafting, collaborative review, approval, and publication. It provides inline review comments, configurable approval workflows, document version control with SHA-256 revision hashes, and a hash-chained audit trail you can verify from the command line."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is DocReview360 different from a document management system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Document management systems route and approve documents but do not assess writing quality. Proofing tools assess quality but do not route or approve. DocReview360 covers the whole path: author, review, analyze quality, revise, approve, verify, publish, and audit, on infrastructure you run yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use DocReview360 or SimpleDocReview?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose SimpleDocReview for an individual or small team that needs a private, lightweight review workspace with no database server. Choose DocReview360 when you need authentication, role-based access, revision history, digital signatures, and a tamper-evident audit log."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is DocReview360 free and open source?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. DocReview360 is released under the MIT license and the source is available on GitHub. It is self-hosted, so there is no subscription."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+  <header class="masthead">
+    <a class="masthead__id" href="/"><b>Eric Putnam</b></a>
+    <nav aria-label="Primary">
+      <a href="/">&larr; All projects</a>
+      <a href="https://github.com/eputnam77/DocReview360" rel="noopener">Repository</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="band band--open" aria-labelledby="title">
+      <div class="spread">
+        <p class="margin-note rise" data-d="1">Project 01<br>Python<br>MIT</p>
+        <div>
+          <h1 class="display rise" id="title" data-d="1">DocReview360</h1>
+          <div class="changebar rise" data-d="2">
+            <p class="lede">
+              Self-hosted document review, approval, and audit workflow software for
+              technical and <em style="font-style:italic;color:var(--mark)">regulated</em> documents.
+            </p>
+          </div>
+
+          <ol class="flow rise" data-d="3" aria-label="Document lifecycle">
+            <li>Draft</li><li>Review</li><li>Resolve</li><li>Approve</li><li>Publish</li>
+          </ol>
+
+          <ul class="actions rise" data-d="4">
+            <li><a class="btn btn--mark" href="https://github.com/eputnam77/DocReview360" rel="noopener">View on GitHub <span class="btn__arrow">&rarr;</span></a></li>
+            <li><a class="btn" href="https://pypi.org/project/docreview360/" rel="noopener">PyPI package</a></li>
+          </ul>
+
+          <p class="note rise" data-d="5">
+            <strong>Alpha.</strong> The current PyPI release is a pre-release. Interfaces may
+            change between versions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Why ============ -->
+    <section class="band" aria-labelledby="why-title">
+      <div class="spread">
+        <p class="margin-note">&sect;&thinsp;01<br>Why</p>
+        <div>
+          <h2 class="section-title" id="why-title">Why it exists</h2>
+          <div class="prose">
+            <p>
+              Most tools do one half of the job. Document management systems route and
+              approve. Proofing tools review and annotate. Neither covers the full path a
+              controlled document actually takes.
+            </p>
+            <p>
+              DocReview360 covers all of it &mdash; author, review, analyze quality, revise,
+              approve, verify, publish, audit &mdash; on infrastructure you run yourself. It
+              ships a FastAPI backend, a Next.js frontend, and a <code>docreview360</code>
+              command-line interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Capabilities ============ -->
+    <section class="band" aria-labelledby="caps-title">
+      <div class="spread">
+        <p class="margin-note">&sect;&thinsp;02<br>Capabilities</p>
+        <div>
+          <h2 class="section-title" id="caps-title">What it does</h2>
+          <ul class="caps" style="margin-top: 2rem;">
+            <li>
+              <h3>Document review</h3>
+              <p>
+                Inline, text-anchored comments alongside the document. Parallel or sequential
+                reviewer assignment, with reassignment and reminders.
+              </p>
+            </li>
+            <li>
+              <h3>Approval workflow</h3>
+              <p>
+                Configurable workflow phases, required approvals, escalations, and digital
+                signatures.
+              </p>
+            </li>
+            <li>
+              <h3>Version control</h3>
+              <p>
+                Autosaved revisions carrying SHA-256 revision hashes, with full revision
+                history.
+              </p>
+            </li>
+            <li>
+              <h3>Audit trail</h3>
+              <p>
+                A hash-chained audit log. The CLI verifies both the integrity of the chain
+                and the signatures on it.
+              </p>
+            </li>
+            <li>
+              <h3>Document quality</h3>
+              <p>
+                Federal writing-standards validation and optional ONNX critic models, run
+                against the draft in place.
+              </p>
+            </li>
+            <li>
+              <h3>Self-hosted</h3>
+              <p>
+                SQLite out of the box. PostgreSQL, MySQL, SQL Server, or Oracle for
+                production. LDAP/AD, SAML 2.0, and WebAuthn sign-in.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Install ============ -->
+    <section class="band" aria-labelledby="install-title">
+      <div class="spread">
+        <p class="margin-note">&sect;&thinsp;03<br>Install</p>
+        <div>
+          <h2 class="section-title" id="install-title">Getting started</h2>
+          <pre><code>python -m pip install --pre docreview360
+docreview360 init
+docreview360 migrate
+docreview360 serve</code></pre>
+          <p class="prose" style="color: var(--ink-60); font-size: 16px;">
+            The base install is the lightweight web review app: FastAPI backend, CLI, SQLite,
+            rich-text authoring and review, notifications, and reviewer management. Add
+            capabilities with extras, then enable them in the frontend Configuration area.
+          </p>
+          <pre><code><span class="c"># production database</span>
+python -m pip install --pre "docreview360[postgres]"
+
+<span class="c"># Celery reminders and escalations</span>
+python -m pip install --pre "docreview360[worker]"
+
+<span class="c"># ONNX critic models</span>
+python -m pip install --pre "docreview360[ml-cpu]"
+
+<span class="c"># SAML 2.0 sign-in</span>
+python -m pip install --pre "docreview360[saml]"
+
+<span class="c"># everything</span>
+python -m pip install --pre "docreview360[full]"</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Which tool ============ -->
+    <section class="band" aria-labelledby="choose-title">
+      <div class="spread">
+        <p class="margin-note">&sect;&thinsp;04<br>Compare</p>
+        <div>
+          <h2 class="section-title" id="choose-title">DocReview360 or SimpleDocReview?</h2>
+          <div class="prose">
+            <p>
+              Both are document review tools and both are mine, so here is the honest split.
+              Pick <a href="/projects/simpledocreview/">SimpleDocReview</a> if you are an
+              individual or small team who wants a private review workspace with no database
+              server and no dependencies. Pick DocReview360 when you need authentication,
+              role-based access control, revision history, cryptographic signatures, and a
+              tamper-evident audit log &mdash; the things a controlled document process
+              requires and SimpleDocReview deliberately does not provide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Spec ============ -->
+    <section class="band" aria-labelledby="spec-title">
+      <div class="spread">
+        <p class="margin-note">&sect;&thinsp;05<br>Details</p>
+        <div>
+          <h2 class="section-title" id="spec-title">Details</h2>
+          <div class="table-scroll">
+            <table class="spec-table">
+              <tbody>
+                <tr><th scope="row">Repository</th><td><a href="https://github.com/eputnam77/DocReview360" rel="noopener">github.com/eputnam77/DocReview360</a></td></tr>
+                <tr><th scope="row">Package</th><td><a href="https://pypi.org/project/docreview360/" rel="noopener">pypi.org/project/docreview360</a></td></tr>
+                <tr><th scope="row">License</th><td>MIT</td></tr>
+                <tr><th scope="row">Status</th><td>Alpha &mdash; pre-release</td></tr>
+                <tr><th scope="row">Stack</th><td>FastAPI backend, Next.js frontend, <code>docreview360</code> CLI</td></tr>
+                <tr><th scope="row">Databases</th><td>SQLite, PostgreSQL, MySQL, SQL Server, Oracle</td></tr>
+                <tr><th scope="row">Authentication</th><td>LDAP / Active Directory, SAML 2.0, WebAuthn</td></tr>
+                <tr><th scope="row">Deployment</th><td>Docker Compose, Helm, Kubernetes manifests</td></tr>
+                <tr><th scope="row">Author</th><td>Eric Putnam</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">
+            <strong>Independent project.</strong> Not an official product of, affiliated with,
+            endorsed by, or sponsored by the U.S. Government, the FAA, or any agency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span><a href="/">&larr; All projects</a></span>
+    <span>&copy; 2026 Eric Putnam</span>
+  </footer>
+</div>
+
+</body>
+</html>

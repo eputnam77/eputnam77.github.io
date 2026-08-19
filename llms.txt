@@ -1,0 +1,36 @@
+# Eric Putnam — Open-Source Documentation Tools
+
+> Eric Putnam is a technical writer who builds open-source software for technical and
+> regulated documentation: document review and approval workflows, federal
+> writing-standards validation, authoring tooling, and public-data dashboards. All six
+> projects are public, free, and self-hosted — there is no paid tier or cloud service.
+> Canonical source for every project is GitHub at https://github.com/eputnam77.
+
+Site: https://eputnam77.github.io/
+
+## Document review and approval
+
+- [DocReview360](https://eputnam77.github.io/projects/docreview360/): Self-hosted document review, approval, and audit workflow software for technical and regulated documents. Routes documents through draft → review → resolve → approve → publish. Inline text-anchored review comments, parallel or sequential reviewer assignment, configurable approval phases with required approvals and escalations, digital signatures, autosaved revisions with SHA-256 revision hashes, and a hash-chained audit log verifiable from the CLI. FastAPI backend, Next.js frontend, `docreview360` CLI. SQLite by default; PostgreSQL, MySQL, SQL Server, or Oracle in production. LDAP/AD, SAML 2.0, and WebAuthn sign-in. Python, MIT license, alpha pre-release on PyPI as `docreview360`. Repository: https://github.com/eputnam77/DocReview360
+
+- [SimpleDocReview](https://eputnam77.github.io/projects/simpledocreview/): Lightweight, local-first document review and approval tool for DOCX, Markdown, and text files up to 5 MB. Runs on your own computer, keeps documents and review data local, and requires only Python 3.10+ with no third-party packages. Assign reviewers, collect comments and change requests, record approvals with name and UTC timestamp, and track a document activity timeline. Deliberately does NOT provide authentication, role-based access control, revision history, cryptographic signatures, or a tamper-evident audit log — use DocReview360 when those are required. Python. Repository: https://github.com/eputnam77/SimpleDocReview
+
+## Writing standards and authoring
+
+- [FedStyleValidator](https://eputnam77.github.io/projects/fedstylevalidator/): Also called Federal Style Validator or FSV. Checks Word `.docx` documents against federal writing, formatting, accessibility, and terminology rules. Built for scanning Advisory Circulars, Orders, and other federal documents before review or publication. Built-in rule packs for federal, FAA, DOT OGC, plain language, accessibility, and external prose checks. Reports issues by category and severity. Output formats: JSON, text, HTML, SARIF, JUnit, DOCX, PDF — suitable for CI pipelines. CLI plus a FastAPI backend and React UI in source checkouts. Python 3.11–3.13, on PyPI as `fedstylevalidator`. Repository: https://github.com/eputnam77/FedStyleValidator. Independent project — not affiliated with or endorsed by the U.S. Government, the FAA, or any agency.
+
+- [DocEditorPlayground](https://eputnam77.github.io/projects/doceditorplayground/): Compares six open-source rich-text authoring editors — TipTap, Toast UI Editor, Editor.js, Slate, Lexical, and CKEditor 5 — inside one consistent full-page UI. A shared workspace shell supplies navigation, theme toggle, controls, diagnostics, and comments so each editor can be run through the same test flow, making a like-for-like evaluation possible. Next.js, TypeScript, Tailwind CSS; Vitest and Playwright for tests; npm only. GPL-3.0. Repository: https://github.com/eputnam77/DocEditorPlayground
+
+## Data tools
+
+- [TopStateHeatmap](https://eputnam77.github.io/projects/topstateheatmap/): Local Python dashboard ranking the 50 U.S. states by habitability, cost of living, living standard, income, education, healthcare, and an equal-weighted overall score. Built from Census ACS, BEA regional price parities, CDC PLACES, the FEMA National Risk Index, NOAA/NEMAC Climate Explorer ACIS LOCA projections, and NCES NAEP. Caches processed data in `data/cache/state_scores.json`; serves on 127.0.0.1:4176. The 100-year view is labeled a "2100 proxy" and uses the 2090–2099 climate projection window. Repository: https://github.com/eputnam77/TopStateHeatmap
+
+- [SellingPriceEstimator](https://eputnam77.github.io/projects/sellingpriceestimator/): Also called Item Pricing Calculator. Estimates optimal selling prices for used items from category-specific depreciation models, item condition (brand new through poor), and sale urgency (quick sale versus maximum value), with a transparent breakdown of every calculation factor. Supports electronics, musical instruments, auto parts, furniture, sporting goods, and collectibles. Interactive CLI with colored output plus a browser-based web UI. Optional market price comparison via a SerpAPI key and an optional social sentiment snapshot; the core estimate runs offline with no keys. Python, MIT license. Repository: https://github.com/eputnam77/SellingPriceEstimator
+
+## Choosing between the two review tools
+
+SimpleDocReview is for individuals and small teams that want a private review workspace with no database server, no cloud account, and nothing to administer. DocReview360 is for controlled document processes that require authentication, role-based access control, revision history, cryptographic signatures, and a tamper-evident audit log. Both are mine and the split is intentional rather than a migration path.
+
+## Optional
+
+- [GitHub profile](https://github.com/eputnam77): Canonical source for all projects; issues and pull requests welcome.
+- [Hugging Face profile](https://huggingface.co/Hoctar77): Hugging Face account for hosted demo Spaces.
