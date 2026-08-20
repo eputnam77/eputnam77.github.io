@@ -39,6 +39,7 @@
       "operatingSystem": "Linux, macOS, Windows",
       "programmingLanguage": "Python",
       "codeRepository": "https://github.com/eputnam77/SimpleDocReview",
+      "sameAs": "https://huggingface.co/spaces/Hoctar77/SimpleDocReview",
       "softwareRequirements": "Python 3.10 or later; a modern web browser. No third-party Python packages required.",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -83,6 +84,14 @@
         },
         {
           "@type": "Question",
+          "name": "Can I try SimpleDocReview without installing it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A live demo runs in the browser as a Hugging Face Space at https://huggingface.co/spaces/Hoctar77/SimpleDocReview, so you can try the review workflow without installing Python."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What are the limits of SimpleDocReview?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -113,7 +122,7 @@
     <!-- ============ Hero ============ -->
     <section class="band band--open" aria-labelledby="title">
       <div class="spread">
-        <p class="margin-note rise" data-d="1">Project 03<br>Python<br>Local-first</p>
+        <p class="margin-note rise" data-d="1">Project 03<br>Python<br>Live demo</p>
         <div>
           <h1 class="display rise" id="title" data-d="1">SimpleDoc<wbr>Review</h1>
           <div class="changebar rise" data-d="2">
@@ -129,13 +138,8 @@
           </ol>
 
           <ul class="actions rise" data-d="4">
-            <li><a class="btn btn--mark" href="https://github.com/eputnam77/SimpleDocReview" rel="noopener">View on GitHub <span class="btn__arrow">&rarr;</span></a></li>
-            <!-- TODO: uncomment when the SimpleDocReview Space is public.
-                 Confirm the slug first: huggingface.co/spaces/Hoctar77/simpledocreview
-                 Also add a Live demo row to the Details table, set the
-                 margin note to "Live demo", and add "sameAs" to the JSON-LD.
-            <li><a class="btn btn--mark" href="https://huggingface.co/spaces/Hoctar77/simpledocreview" rel="noopener">Try the live demo <span class="btn__arrow">&rarr;</span></a></li>
-            -->
+            <li><a class="btn btn--mark" href="https://huggingface.co/spaces/Hoctar77/SimpleDocReview" rel="noopener">Try the live demo <span class="btn__arrow">&rarr;</span></a></li>
+            <li><a class="btn" href="https://github.com/eputnam77/SimpleDocReview" rel="noopener">View on GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -253,6 +257,7 @@ python app.py</code></pre>
             <table class="spec-table">
               <tbody>
                 <tr><th scope="row">Repository</th><td><a href="https://github.com/eputnam77/SimpleDocReview" rel="noopener">github.com/eputnam77/SimpleDocReview</a></td></tr>
+                <tr><th scope="row">Live demo</th><td><a href="https://huggingface.co/spaces/Hoctar77/SimpleDocReview" rel="noopener">Hugging Face Space</a></td></tr>
                 <tr><th scope="row">Requirements</th><td>Python 3.10+, a modern web browser</td></tr>
                 <tr><th scope="row">Dependencies</th><td>None &mdash; no third-party Python packages</td></tr>
                 <tr><th scope="row">Formats</th><td><code>.txt</code>, <code>.md</code>, <code>.docx</code> &mdash; up to 5&nbsp;MB per file</td></tr>

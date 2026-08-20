@@ -41,6 +41,7 @@
       "programmingLanguage": "TypeScript",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "codeRepository": "https://github.com/eputnam77/DocEditorPlayground",
+      "sameAs": "https://huggingface.co/spaces/Hoctar77/DocEditorPlayground",
       "softwareRequirements": "Node.js, npm",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -77,6 +78,14 @@
             "@type": "Answer",
             "text": "Each editor project ships its own demo with its own chrome, which makes differences hard to attribute. A single shell with the same navigation, controls, and diagnostics means the only variable is the editor itself, so you can run the same test flow through each one."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I try DocEditorPlayground without installing it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A live demo runs in the browser as a Hugging Face Space at https://huggingface.co/spaces/Hoctar77/DocEditorPlayground, so you can compare the six editors without cloning the repository or running npm."
+          }
         }
       ]
     }
@@ -102,7 +111,7 @@
     <!-- ============ Hero ============ -->
     <section class="band band--open" aria-labelledby="title">
       <div class="spread">
-        <p class="margin-note rise" data-d="1">Project 04<br>TypeScript<br>GPL-3.0</p>
+        <p class="margin-note rise" data-d="1">Project 04<br>TypeScript<br>Live demo</p>
         <div>
           <h1 class="display rise" id="title" data-d="1">DocEditor<wbr>Playground</h1>
           <div class="changebar rise" data-d="2">
@@ -114,13 +123,8 @@
           </div>
 
           <ul class="actions rise" data-d="3">
-            <li><a class="btn btn--mark" href="https://github.com/eputnam77/DocEditorPlayground" rel="noopener">View on GitHub <span class="btn__arrow">&rarr;</span></a></li>
-            <!-- TODO: uncomment when the DocEditorPlayground Space is public.
-                 Confirm the slug first: huggingface.co/spaces/Hoctar77/doceditorplayground
-                 Also add a Live demo row to the Details table, set the
-                 margin note to "Live demo", and add "sameAs" to the JSON-LD.
-            <li><a class="btn btn--mark" href="https://huggingface.co/spaces/Hoctar77/doceditorplayground" rel="noopener">Try the live demo <span class="btn__arrow">&rarr;</span></a></li>
-            -->
+            <li><a class="btn btn--mark" href="https://huggingface.co/spaces/Hoctar77/DocEditorPlayground" rel="noopener">Try the live demo <span class="btn__arrow">&rarr;</span></a></li>
+            <li><a class="btn" href="https://github.com/eputnam77/DocEditorPlayground" rel="noopener">View on GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -241,6 +245,7 @@ npm run dev</code></pre>
             <table class="spec-table">
               <tbody>
                 <tr><th scope="row">Repository</th><td><a href="https://github.com/eputnam77/DocEditorPlayground" rel="noopener">github.com/eputnam77/DocEditorPlayground</a></td></tr>
+                <tr><th scope="row">Live demo</th><td><a href="https://huggingface.co/spaces/Hoctar77/DocEditorPlayground" rel="noopener">Hugging Face Space</a></td></tr>
                 <tr><th scope="row">License</th><td>GNU General Public License v3.0</td></tr>
                 <tr><th scope="row">Stack</th><td>Next.js, TypeScript, Tailwind CSS</td></tr>
                 <tr><th scope="row">Testing</th><td>Vitest, Playwright</td></tr>
